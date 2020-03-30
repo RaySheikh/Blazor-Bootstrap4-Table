@@ -3,7 +3,7 @@
 
 Works with Blazor Serverside project.
 
-Install using nuget package manager:
+[Install using nuget package manager:](https://www.nuget.org/packages/BlazorBootstrap4Table/)
 ```
 Install-Package BlazorBootstra4Table -Version 1.0.1
 ```
