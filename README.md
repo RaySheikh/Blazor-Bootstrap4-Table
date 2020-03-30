@@ -31,3 +31,11 @@ Usage:
 }
 ```
 Please reference latest boostrap 4 stylesheet in _Host.cshtml head tag.
+
+### Future Enhancements:
+
+- Pagination
+- Sorting
+- Search
+- Responsive
+
