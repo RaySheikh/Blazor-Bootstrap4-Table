@@ -1,6 +1,4 @@
-## Blazor BootStrap4 Tables
-
-[GitHub Link](https://github.com/RaySheikh/Blazor-Bootstrap4-Table/)
+## [Blazor BootStrap4 Tables](https://github.com/RaySheikh/Blazor-Bootstrap4-Table/)
 
 Works with Blazor Serverside project.
 
