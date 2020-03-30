@@ -1,0 +1,39 @@
+﻿@typeparam TableItem
+
+@if (Items == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if (Items.Count < 1)
+{
+    <p><em>No Records Found.</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                @TableHeader
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Items)
+            {
+                <tr>
+                    @TableRow(item)
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+
+@code {
+    [Parameter]
+    public RenderFragment TableHeader { get; set; }
+    [Parameter]
+    public RenderFragment<TableItem> TableRow { get; set; }
+    [Parameter]
+    public List<TableItem> Items { get; set; }
+
+}
