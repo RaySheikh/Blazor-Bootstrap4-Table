@@ -1,4 +1,5 @@
-<h2>Blazor BootStrap4 Tables</h2>
+## Blazor BootStrap4 Tables
+
 
 Works with Blazor Serverside project.
 
