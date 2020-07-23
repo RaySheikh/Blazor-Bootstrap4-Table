@@ -4,7 +4,7 @@ Works with Blazor Serverside project.
 
 [Install using nuget package manager:](https://www.nuget.org/packages/BlazorBootstrap4Table/)
 ```
-Install-Package BlazorBootstra4Table -Version 1.0.1
+Install-Package BlazorBootstra4Table -Version 1.1.0
 ```
 Usage:
 ```
@@ -57,7 +57,7 @@ Usage:
 Please reference latest boostrap 4 stylesheet in _Host.cshtml head tag.
 
 ### Future Enhancements:
-- Responsive:Done!
+- Responsive: Done!
 - Pagination
 - Sorting
 - Search
