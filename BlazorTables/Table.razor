@@ -1,4 +1,5 @@
 ﻿@typeparam TableItem
+@inject IJSRuntime js
 
 @if (Items == null)
 {
@@ -10,7 +11,7 @@ else if (Items.Count < 1)
 }
 else
 {
-    <table class="table">
+    <table class="table @Striped">
         <thead>
             <tr>
                 @TableHeader
@@ -18,17 +19,19 @@ else
         </thead>
         <tbody>
             @foreach (var item in Items)
-            {
+             {
                 <tr>
                     @TableRow(item)
                 </tr>
-            }
+             }
         </tbody>
     </table>
 
 }
 
 @code {
+    [Parameter]
+    public string Striped { get; set; }
     [Parameter]
     public RenderFragment TableHeader { get; set; }
     [Parameter]
