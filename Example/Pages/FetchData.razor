@@ -1,4 +1,4 @@
-@page "/fetchdata"
+@page "/"
 @inject HttpClient Http
 @using BlazorBootstrap4Table
 
@@ -6,12 +6,6 @@
 
 <p>Blazor Bootstrap 4 Rresponsive Table</p>
 
-@if (forecasts == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
     <Table Items="@forecasts" Striped="table-striped">
         <TableHeader>
 
@@ -28,7 +22,7 @@ else
             <td mobile-header="Summary">@context.Summary</td>
         </TableRow>
     </Table>
-}
+
 
 @code {
     private List<WeatherForecast> forecasts;
