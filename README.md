@@ -1,6 +1,6 @@
 ## Blazor BootStrap4 Responsive Tables
 
-![hippo](https://photos.app.goo.gl/vePKVKcHmQjg7DCeA)
+![hippo](https://doc-10-3g-docs.googleusercontent.com/docs/securesc/arjs1d2a52pemrlg2863g4g7v9mqg5l6/gpalmi4sc93a4ig9md6qe50n6se8e9vc/1595550825000/15266141592163550069/15266141592163550069/1TOq53cXz_mC1DIjmOs-rmKw3iVBoldii?e=view&authuser=0&nonce=tkg379lm4so62&user=15266141592163550069&hash=11ruvgame3mfaja8n3d749e18fd5039p)
 
 Works with Blazor Serverside project.
 
