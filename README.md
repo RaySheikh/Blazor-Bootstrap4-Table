@@ -10,10 +10,6 @@ Install-Package BlazorBootstra4Table -Version 1.1.0
 ```
 Usage:
 ```
-//Add to index.html file in wwwroot folder
-<link href="_content/BlazorBootstrap4Table/styles.css" rel="stylesheet"/>
-```
-```
 @page "/fetchdata"
 @inject HttpClient Http
 @using BlazorBootstrap4Table
@@ -59,6 +55,10 @@ Usage:
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
 }
+```
+```
+//Add to index.html file in wwwroot folder
+<link href="_content/BlazorBootstrap4Table/styles.css" rel="stylesheet"/>
 ```
 Please reference latest boostrap 4 stylesheet in _Host.cshtml head tag.
 
