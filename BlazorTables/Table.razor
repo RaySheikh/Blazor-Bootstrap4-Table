@@ -1,31 +1,38 @@
-﻿@typeparam TableItem
+﻿@typeparam TItem
 @inject IJSRuntime js
 
 @if (Items == null)
 {
     <p><em>Loading...</em></p>
 }
-else if (Items.Count < 1)
+else if (Items.Count<TItem>() < 1)
 {
     <p><em>No Records Found.</em></p>
 }
 else
 {
-    <table class="table @Striped">
-        <thead>
-            <tr>
-                @TableHeader
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Items)
-             {
+    @if(GetFilterableText != null)
+    {
+        <SearchBar GetSearch="@GetSearch"/>
+    }
+    <div>
+        <table class="table @Striped">
+            <thead>
                 <tr>
-                    @TableRow(item)
+                    @TableHeader
                 </tr>
-             }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (TItem item in GetFilteredItems())
+                 {
+                    <tr>
+                        @TableRow(item)
+                    </tr>
+                 }
+            </tbody>
+        </table>
+    </div>
+   
 
 }
 
@@ -35,8 +42,34 @@ else
     [Parameter]
     public RenderFragment TableHeader { get; set; }
     [Parameter]
-    public RenderFragment<TableItem> TableRow { get; set; }
+    public RenderFragment<TItem> TableRow { get; set; }
     [Parameter]
-    public List<TableItem> Items { get; set; }
+    public IEnumerable<TItem> Items { get; set; }
+    [Parameter]
+    public Func<TItem, string> GetFilterableText { get; set; }
 
-}
+    private string Filter;
+    private static readonly Func<TItem, string> DefaultGetFilterableText =
+        item => (item?.ToString() ?? "");
+
+    private void GetSearch(string search)
+   {
+        Filter = search;
+    }
+
+    private IEnumerable<TItem> GetFilteredItems()
+    {
+        Func<TItem, string> filterFunc = GetFilterableText ?? DefaultGetFilterableText;
+        IEnumerable<TItem> result = (Items ?? Array.Empty<TItem>());
+        if (!string.IsNullOrEmpty(Filter))
+        {
+            result = result
+                .Where(x =>
+                    (GetFilterableText(x) ?? "")
+                    .Contains(Filter, StringComparison.InvariantCultureIgnoreCase));
+        }
+        return result;
+    }
+
+
+    }

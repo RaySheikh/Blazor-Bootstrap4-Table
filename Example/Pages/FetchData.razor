@@ -4,9 +4,8 @@
 
 <h1>Weather forecast</h1>
 
-<p>Blazor Bootstrap 4 Rresponsive Table</p>
 
-    <Table Items="@forecasts" Striped="table-striped">
+    <Table Items="@forecasts" Striped="table-striped" GetFilterableText=@(item => $"{item.Date} {item.Summary} {item.TemperatureC} {item.TemperatureF}" )>
         <TableHeader>
 
             <th>Date</th>
@@ -26,6 +25,7 @@
 
 @code {
     private List<WeatherForecast> forecasts;
+
 
     protected override async Task OnInitializedAsync()
     {
