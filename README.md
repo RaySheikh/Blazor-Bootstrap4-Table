@@ -6,7 +6,7 @@ Works with Blazor Serverside or WebAssembly.
 
 [Install using nuget package manager:](https://www.nuget.org/packages/BlazorBootstrap4Table/)
 ```
-Install-Package BlazorBootstra4Table -Version 1.2.0
+Install-Package BlazorBootstra4Table -Version 1.2.1
 ```
 Usage:
 ```
