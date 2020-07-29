@@ -58,7 +58,10 @@ Usage:
 ```
 Enable Search Filter: 
 GetFilterableText = Fun<TItem, String>
-```<Table Items="@forecasts" Striped="table-striped" GetFilterableText=@(item => $"{item.Date} {item.Summary} {item.TemperatureC} {item.TemperatureF}" )>```
+```
+<Table Items="@forecasts" Striped="table-striped" GetFilterableText=@(item => $"{item.Date} {item.Summary} {item.TemperatureC} {item.TemperatureF}" )>
+```
+Link CSS file:
 ```
 //Add to index.html file in wwwroot folder
 <link href="_content/BlazorBootstrap4Table/styles.css" rel="stylesheet"/>
