@@ -70,8 +70,9 @@ Link CSS file:
 Please reference latest boostrap 4 stylesheet in _Host.cshtml head tag.
 
 ### Future Enhancements:
-- Responsive: Done!
+- ~~Responsive~~: Done!
+- ~~Search~~: Done!
 - Pagination
 - Sorting
-- Search
+
 
