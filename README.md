@@ -1,5 +1,7 @@
 ## Blazor BootStrap4 Responsive Tables
 
+![example](https://drive.google.com/uc?export=view&id=1TOq53cXz_mC1DIjmOs-rmKw3iVBoldii)
+
 Works with Blazor Serverside project.
 
 [Install using nuget package manager:](https://www.nuget.org/packages/BlazorBootstrap4Table/)
@@ -53,6 +55,10 @@ Usage:
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
 }
+```
+```
+//Add to index.html file in wwwroot folder
+<link href="_content/BlazorBootstrap4Table/styles.css" rel="stylesheet"/>
 ```
 Please reference latest boostrap 4 stylesheet in _Host.cshtml head tag.
 
