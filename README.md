@@ -2,7 +2,7 @@
 
 ![example](https://drive.google.com/uc?export=view&id=1nyvokb4fPSA-qe_NJ7Au1P28vakXLM4s)
 
-Works with Blazor Serverside project.
+Works with Blazor Serverside or WebAssembly.
 
 [Install using nuget package manager:](https://www.nuget.org/packages/BlazorBootstrap4Table/)
 ```
