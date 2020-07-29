@@ -37,6 +37,7 @@ else
 }
 
 @code {
+
     [Parameter]
     public string Striped { get; set; }
     [Parameter]
@@ -53,7 +54,7 @@ else
         item => (item?.ToString() ?? "");
 
     private void GetSearch(string search)
-   {
+    {
         Filter = search;
     }
 
@@ -71,5 +72,4 @@ else
         return result;
     }
 
-
-    }
+}
