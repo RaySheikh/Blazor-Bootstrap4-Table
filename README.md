@@ -6,7 +6,7 @@ Works with Blazor Serverside project.
 
 [Install using nuget package manager:](https://www.nuget.org/packages/BlazorBootstrap4Table/)
 ```
-Install-Package BlazorBootstra4Table -Version 1.1.0
+Install-Package BlazorBootstra4Table -Version 1.2.0
 ```
 Usage:
 ```
@@ -58,6 +58,7 @@ Usage:
 ```
 Enable Search Filter: 
 GetFilterableText = Fun<TItem, String>
+Pass items you want searchbar
 ```
 <Table Items="@forecasts" Striped="table-striped" GetFilterableText=@(item => $"{item.Date} {item.Summary} {item.TemperatureC} {item.TemperatureF}" )>
 ```
