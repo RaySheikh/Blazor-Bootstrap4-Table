@@ -6,9 +6,11 @@
     <IsPackable>true</IsPackable>
     <Description>Responsive</Description>
     <Authors>Ray Sheikh</Authors>
-    <Version>1.1.0</Version>
+    <Version>1.2.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Company />
+    <PackageProjectUrl>https://github.com/RaySheikh/Blazor-Bootstrap4-Table</PackageProjectUrl>
   </PropertyGroup>
 
 
