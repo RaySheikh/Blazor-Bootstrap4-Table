@@ -58,7 +58,7 @@ Usage:
 ```
 Enable Search Filter: 
 GetFilterableText = Fun<TItem, String>
-Pass items you want searchbar
+Pass items you want searchbar to filter
 ```
 <Table Items="@forecasts" Striped="table-striped" GetFilterableText=@(item => $"{item.Date} {item.Summary} {item.TemperatureC} {item.TemperatureF}" )>
 ```
